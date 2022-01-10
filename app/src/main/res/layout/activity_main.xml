@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cartTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Productos agregados:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#5BD860"
+        android:drawableRight="@drawable/ic_baseline_store_24"
+        android:onClick="open"
+        android:text="Agregar productos"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartCont" />
+
+    <TextView
+        android:id="@+id/cartCont"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#2196F3"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cartTextView"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/cartTextView"
+        app:layout_constraintTop_toBottomOf="@+id/cartTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
